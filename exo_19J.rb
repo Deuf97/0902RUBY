@@ -3,11 +3,13 @@ nom = "dupont."
 mail = "@email.fr"
 
 email=Array.new
-email<< 50.times do |i|
-    if i < 9
-        puts prénom+nom+"0"+"#{i+2}"+mail
+50.times do |i|
+    #J'ai pas trouvé pour les pairs je suis cuit
+       if i < 10
+        email << prénom+nom+"0"+"#{i}"+mail
     else
-        puts prénom+nom+"#{i+2}"+mail
+        email << prénom+nom+"#{i}"+mail
     end
-
 end
+
+puts email
