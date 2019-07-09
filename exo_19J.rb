@@ -3,7 +3,7 @@ nom = "dupont."
 mail = "@email.fr"
 
 email=Array.new
-50.times do |i|
+2.step(50, 2) do |i|
     #J'ai pas trouvé pour les pairs je suis cuit
        if i < 10
         email << prénom+nom+"0"+"#{i}"+mail
